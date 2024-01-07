@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan  5 11:15:15 2024
+# Process ID: 23852
+# Current directory: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2260 C:\Users\VivoBook\Desktop\Computer Science\Hardware_Design\Final_Project\Final_Project\final_project.xpr
+# Log file: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/vivado.log
+# Journal file: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.xpr}
+update_compile_order -fileset sources_1

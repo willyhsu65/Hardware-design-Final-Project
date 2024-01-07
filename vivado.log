@@ -1,0 +1,846 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan  5 13:28:56 2024
+# Process ID: 7332
+# Current directory: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2288 C:\Users\VivoBook\Desktop\Computer Science\Hardware_Design\Final_Project\Final_Project\final_project.xpr
+# Log file: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/vivado.log
+# Journal file: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.391 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 13:43:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 13:43:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2519.238 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 14:28:30 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 14:28:30 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2538.387 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 14:37:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 14:37:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 14:46:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 14:46:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 14:50:30 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 14:50:30 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 14:53:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 14:53:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Jan  5 14:58:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:00:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:00:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:04:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:04:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:10:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:10:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:13:24 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:13:24 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/debounce.v} {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/state_control.v} {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/onepulse.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:49:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:49:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2575.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:53:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:53:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:54:33 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:54:33 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 15:54:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 15:54:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:00:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:00:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:04:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:04:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:09:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:09:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:13:11 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:13:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:15:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:15:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:17:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:17:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:24:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:24:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:28:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:28:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:31:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:31:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:34:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:34:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+add_files -norecurse {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/clock_divisor_scene.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 16:58:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 16:58:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:04:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:04:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2579.527 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:13:40 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:13:40 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:14:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:14:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:14:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:14:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Jan  5 17:16:06 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Jan  5 17:16:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:17:37 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2579.527 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:22:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:22:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:22:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:22:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:37:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:37:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:45:08 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:45:08 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:45:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:45:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+export_ip_user_files -of_objects  [get_files {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/clock_divisor_scene.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/clock_divisor_scene.v}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:48:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:48:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2594.461 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:54:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:54:55 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:55:43 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:55:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:55:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:55:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 17:59:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 17:59:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:07:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:07:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:21:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:21:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:23:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:23:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:56:23 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:56:23 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:57:09 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:57:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:57:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:57:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 18:59:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 18:59:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2601.086 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BA2A75A
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]'
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jan  5 19:07:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/runme.log
+[Fri Jan  5 19:07:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 19:09:18 2024...

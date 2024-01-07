@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan  5 11:15:15 2024
+# Process ID: 23852
+# Current directory: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2260 C:\Users\VivoBook\Desktop\Computer Science\Hardware_Design\Final_Project\Final_Project\final_project.xpr
+# Log file: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/vivado.log
+# Journal file: C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project'
+INFO: [Project 1-313] Project file moved from 'C:/Users/VivoBook/Downloads/Hardware-design-Final-Project-main/Hardware-design-Final-Project-main' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/VGA/DEMO/demo2/Basys3_Master.xdc'; using path 'C:/Users/VivoBook/Downloads/VGA/DEMO/demo2/Basys3_Master.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/VGA/DEMO/demo2/Basys3_Master.xdc'; using path 'C:/Users/VivoBook/Downloads/VGA/DEMO/demo2/Basys3_Master.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/VGA/DEMO/demo2/Basys3_Master.xdc'; using path 'C:/Users/VivoBook/Downloads/VGA/DEMO/demo2/Basys3_Master.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 11:15:38 2024...
