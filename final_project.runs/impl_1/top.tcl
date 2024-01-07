@@ -132,6 +132,8 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.cache/wt} [current_project]
   set_property parent.project_path {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.xpr} [current_project]
+  set_property ip_repo_paths {{C:/Users/VivoBook/Downloads/Keyboard Sample Code/Keyboard Sample Code/ip}} [current_project]
+  update_ip_catalog
   set_property ip_output_repo {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
@@ -139,6 +141,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.runs/synth_1/top.dcp}}
   read_ip -quiet {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+  read_ip -quiet {{c:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci}}
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/VivoBook/Downloads/VGA/DEMO/demo2/Basys3_Master.xdc
 OPTRACE "read constraints: implementation" END { }

@@ -1,6 +1,7 @@
 module mem_addr_gen(
     input clk,
     input rst,
+    input jump,
     input [3-1:0] state,
     input [9:0] h_cnt,
     input [9:0] v_cnt,
@@ -15,7 +16,8 @@ module mem_addr_gen(
     reg [3-1:0] jump_counter, next_jump_counter;
     reg [2-1:0] jump_dir, next_jump_dir;
     
-
+    reg [3-1:0] max_jump_counter;
+    
     always @(*) begin
         if(state == 3'd0) begin
             if((v_cnt >> 1) >= 80 && (v_cnt >> 1) <= 110) begin
@@ -208,40 +210,81 @@ module mem_addr_gen(
     end
     
 // play jumping scene
+    parameter [2-1:0] UP = 2'd0;
+    parameter [2-1:0] DOWN = 2'd1;
+    parameter [2-1:0] STOP = 2'd2;
+    
+    reg [2-1:0] jump_state, next_jump_state;
+    reg [3-1:0] jump_counter, next_jump_counter;
+    reg [3-1:0] max_jump_counter, next_max_jump_counter;
     
     always @ (posedge clk or posedge rst) begin
         if(rst || state != 3'd1) begin
+            max_jump_counter <= 3'd0;
             jump_counter <= 3'd0;
-            jump_dir <= 2'd0;
+            jump_state <= STOP;
         end
         else begin
+            max_jump_counter = next_max_jump_counter;
             jump_counter <= next_jump_counter;
-            jump_dir <= next_jump_dir;
+            jump_state <= next_jump_state;
         end
     end
     
     always @(*) begin
-        if(next_jump_dir == 2'd1) begin
+        if(jump) begin
+            if(jump_counter + 3'd2 > 3'd6) begin
+                next_max_jump_counter = 3'd6;
+            end
+            else begin
+                next_max_jump_counter = jump_counter + 3'd2;
+            end
+        end
+        else begin
+            next_max_jump_counter = max_jump_counter;
+        end
+    end
+    
+    always @(*) begin
+        if(jump_state == STOP) begin
+            if(jump) begin
+                next_jump_state = UP;
+            end
+            else begin
+                next_jump_state = STOP;
+            end
+        end
+        else if(jump_state == UP) begin
+            if(next_jump_counter < next_max_jump_counter) begin
+                next_jump_state = UP;
+            end
+            else begin
+                next_jump_state = DOWN;
+            end
+        end
+        else begin
+            if(next_jump_counter == 3'd0) begin
+                next_jump_state = STOP;
+            end
+            else if(jump) begin
+                next_jump_state = UP;
+            end
+            else begin
+                next_jump_state = DOWN;
+            end
+        end
+    end
+    
+    always @(*) begin
+        if(jump_state == DOWN) begin
             next_jump_counter = jump_counter - 3'd1;
         end
-        else if(next_jump_dir == 2'd0)begin
+        else if(jump_state == UP)begin
             next_jump_counter = jump_counter + 3'd1;
         end
         else begin
             next_jump_counter = jump_counter;        
         end
     end
-    
-    always @(*) begin
-        if(jump_counter == 3'd0) begin
-            next_jump_dir = 2'd0;
-        end
-        else if(jump_counter == 3'd6) begin
-            next_jump_dir = 2'd1;
-        end
-        else begin
-            next_jump_dir = jump_dir;
-        end
-    end
-    
+   
 endmodule

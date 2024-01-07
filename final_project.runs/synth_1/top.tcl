@@ -84,12 +84,15 @@ set_property parent.project_path {C:/Users/VivoBook/Desktop/Computer Science/Har
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths {{c:/Users/VivoBook/Downloads/Keyboard Sample Code/Keyboard Sample Code/ip}} [current_project]
+update_ip_catalog
 set_property ip_output_repo {c:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.ip_user_files/mem_init_files/out.coe}}
 read_verilog -library xil_defaultlib {
+  {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/KeyboardDecoder.v}
   {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.srcs/sources_1/new/clock_divisor.v}
   {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Hardware_Design_Code/Final_project/debounce.v}
   {C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.srcs/sources_1/new/mem_addr_gen.v}
@@ -100,6 +103,8 @@ read_verilog -library xil_defaultlib {
 }
 read_ip -quiet {{C:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
+
+read_ip -quiet {{c:/Users/VivoBook/Desktop/Computer Science/Hardware_Design/Final_Project/Final_Project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci}}
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
